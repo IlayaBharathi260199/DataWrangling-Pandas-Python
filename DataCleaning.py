@@ -3,7 +3,7 @@ import pandas as pd
 pd.set_option('display.max.rows', 70)  # will show us 70 rows (we can change as per our requirement)
 
 # Reading data as CSV
-df = pd.read_csv("C:/Users/ILAYA BHARATHI M/Desktop/Pandas data/Cricket_Data1.csv")
+df = pd.read_csv(r"C:\Users\ILAYA BHARATHI M\Desktop\dataWrangling\DataWrangling-Pandas-Python\Data\Raw\Cricket_Data1.csv")
 print(df.count())
 # printing Schema
 print(df.dtypes)
@@ -66,7 +66,7 @@ print('========NullCounts====')
 print(df4.isnull().sum())
 
 # Writing Cleansed data
-# df4.to_csv("C:/Users/ILAYA BHARATHI M/Desktop/Pandas data/Cricket_Data_final2.csv", index=False)
+df4.to_csv(r'C:\Users\ILAYA BHARATHI M\Desktop\dataWrangling\DataWrangling-Pandas-Python\Data\Cleansed\Cricket_Data1_cleansed.csv', index=False)
 
 print(df5.dtypes)
 print(df5)
